@@ -44,10 +44,10 @@ function HomePage({ navigation }) {
         <Image style={styles.iconimage} source={require("electricarmy/assets/a3f3dedf6f9fa.png")}/>
       </View>
       <Text style={styles.nhousehold}>
-        1인 가구
+        
       </Text>
       <View style={styles.city}>
-        <Text style={styles.cityName}>{city}</Text>
+        
       </View>
       <TouchableOpacity
         style={styles.setting}
@@ -58,53 +58,7 @@ function HomePage({ navigation }) {
     </View>
     <View style={styles.homepage1} /** 메인 화면*/>
       <View style={styles.homepagetext}>
-        <View style={styles.firstline}>
-          <Text style={styles.firstline1}>
-            Your Electricity Usage of the Month
-          </Text>
-          <Text style={styles.colon}> : </Text>
-          <Text style={styles.firstline2}>
-            290kWh
-          </Text>
-        </View>
-        <View style={styles.secondline}>
-          <Text style={styles.secondline1}>
-            Average Usage of your Household
-          </Text>
-          <Text style={styles.colon}> : </Text>
-          <Text style={styles.secondline2}>
-            190kWh
-          </Text>
-        </View>
-        <View style={styles.thirdline}>
-          <Text style={styles.thirdline1}>
-            Power generation through self-generation
-          </Text>
-          <Text style={styles.colon}> : </Text>
-          <Text style={styles.thirdline2}>
-            10kWh
-          </Text>
-        </View>
-        <View style={styles.fourthline}>
-          <Text style={styles.fourthline1}>You've planted</Text>
-          <Text style={styles.fourthline2}>0.5</Text>
-          <Text style={styles.fourthline3}>trees</Text>
-          <Text style={styles.fourthline4}>This month</Text>
-        </View>
-        <View style={styles.fourthlineplus}>
-          <Text style={styles.fourthlineplus1}>You've saved...</Text>
-          <Text style={styles.fourthlineplus2}>100</Text>
-          <Text style={styles.fourthlineplus3}>kg-CO2</Text>
-        </View>
-        <View style={styles.underline}></View>
-        <TouchableOpacity style={styles.fifthline}>
-          <Icon name="angle-right" size={20} color="#000000" />
-          <Text style={styles.fifthline1}>Self-Power Recommendation</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.sixthline} onPress={() => navigation.navigate('ShopPage')}>
-          <Icon name="angle-right" size={20} color="#000000" />
-          <Text style={styles.fifthline1}>Shop Page</Text>
-        </TouchableOpacity>
+        <Image style={styles.mainimage} source={require("electricarmy/assets/photo_2023-08-16_08-17-17.jpg")}/>
       </View>
     </View>
   </View>
@@ -280,6 +234,12 @@ const styles = StyleSheet.create({
     },
     colon: {
       fontSize: 30,
+    },
+    mainimage: {
+      width: "100%",
+      height: "100%",
+      resizeMode: "cover",
+      borderRadius: 25,
     },
 });
 

@@ -63,15 +63,6 @@ export default function BottombarPage() {
             ),
           }} />
         <Tab.Screen
-          name="Shop"
-          component={ShopPage}
-          options={{
-            tabBarShowLabel: false,
-            tabBarIcon: ({ color, size }) => (
-              <Icon name="tags" color={color} size={size} />
-            ),
-          }} />
-        <Tab.Screen
           name="News"
           component={NewsPage}
           options={{
@@ -99,3 +90,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#1B6E8F',
   },
 });
+
+/**<Tab.Screen
+name="Shop"
+component={ShopPage}
+options={{
+  tabBarShowLabel: false,
+  tabBarIcon: ({ color, size }) => (
+    <Icon name="tags" color={color} size={size} />
+  ),
+}} />*/
