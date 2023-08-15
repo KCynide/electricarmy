@@ -76,7 +76,7 @@ function NewsPage({ navigation }) {
   <View style={styles.container}>
     <View style={styles.tobtabs}/**상단 바 설정 */>
       <View style={styles.nullfreunde}>
-        <Image style={styles.iconimage} source={require("electricarmy/assets/Symbol.png")}/>
+        <Image style={styles.iconimage} source={require("electricarmy/assets/a3f3dedf6f9fa.png")}/>
       </View>
       <Text style={styles.nhousehold}>
         1인 가구
@@ -119,7 +119,7 @@ function NewsPage({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#88b04b',
+    backgroundColor: '#1B6E8F',
   },
   tobtabs: {
     position: 'absolute',
@@ -138,6 +138,7 @@ const styles = StyleSheet.create({
   iconimage: {
     width: '60%',
     height: '100%',
+    resizeMode: "contain",
   },
   nhousehold: {
     fontSize: 20,

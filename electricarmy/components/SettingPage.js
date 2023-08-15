@@ -19,13 +19,13 @@ import settingdata from './setting/settingdata';
 import { Transition, Transitioning } from 'react-native-reanimated';
 import { StatusBar } from 'expo-status-bar';
 
-const transition = (
+/**const transition = (
   <Transition.Together>
     <Transition.In type='fade' />
     <Transition.Change />
     <Transition.Out type='fade' />
   </Transition.Together>
-);
+);*/
 
 function SettingPage({navigation, item, onPress, style}) {
   /**위치 정보를 사용할지에 대해 사용자에게 물어봄 */
@@ -62,7 +62,7 @@ function SettingPage({navigation, item, onPress, style}) {
       </View>
       <View style={styles.profile}/**유저의 프로필. 구현되지 않음*/>
         <View style={styles.profilephoto}>
-          <Image style={styles.profilephotoimage} source={require("electricarmy/assets/Icon_green.png")} />
+          <Image style={styles.profilephotoimage} source={require("electricarmy/assets/a3f3dedf6f9fa.png")} />
         </View>
         <View style={styles.profiletext}>
           <View>

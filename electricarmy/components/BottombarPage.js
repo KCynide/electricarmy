@@ -35,7 +35,7 @@ export default function BottombarPage() {
         screenOptions={{
           headerShown: false,
           tabBarStyle: {
-            backgroundColor: '#88b04b',
+            backgroundColor: '#1B6E8F',
             color: 'white',
             height: 65,
           },
@@ -96,6 +96,6 @@ export default function BottombarPage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#88b04b',
+    backgroundColor: '#1B6E8F',
   },
 });

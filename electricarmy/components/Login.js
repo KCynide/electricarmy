@@ -17,7 +17,7 @@ function Login({ navigation }) {
   const [password, setPassword] = useState("");
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require("electricarmy/assets/Logo_vert.png")} />
+      <Image style={styles.image} source={require("electricarmy/assets/logo_c191.png")} />
       <StatusBar style="auto" />
       <View style={styles.inputView}>
         <TextInput
@@ -55,13 +55,14 @@ function Login({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#88b04b',
+    backgroundColor: '#1B6E8F',
     alignItems: 'center',
     justifyContent: 'center',
   },
   image :{
     width: "40%",
     height: "40%",
+    resizeMode: "contain",
   },
   logotext: {
     marginBottom: 40,
@@ -101,7 +102,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginTop: 20,
     marginBottom: 60,
-    backgroundColor: "#BDAA46",
+    backgroundColor: "#1B9E4F",
   },
 });
 
